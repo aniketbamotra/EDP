@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background: linear-gradient(104.46deg, #256667 27.08%, #804702 100%);
+    min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sans{
+    font-family: 'Raleway', sans-serif;
+    color: #EDF2F4;
+    font-size: 4.5ch;
+    font-weight: 400;
+    margin-bottom: 1.5em;
+}
+.serif{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 9ch;
+    color: #EDF2F4;
+    font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Rest of CSS  */
+
+header{
+    /* margin-bottom: 6.25em; */
+    margin: 3.25em 0em 6.25em 3.25em;
+}
+.logo{
+    font-size: 8ch;
+    margin-bottom: 2.5rem;
+}
+.divider{
+    width: 50%;
+    height: 4px;
+    border: 2px solid #EDF2F4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.prediction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.25em;
+}
+.collected-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 6.25em;
+}
+.cd-data{
+    text-align: center;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #F28705;
+    width: 100%;
+    padding: 1em 0em;
+}
+.ft-text{
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 2ch;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 425px){
+    header{
+        margin-left: 1.5em;
+    }
+    .logo{
+        font-size: 5ch;
+    }
+    .sans{
+        font-size: 3ch;
+    }
+    .serif{
+        font-size: 6ch;
+    }
+    .collected-data{
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+    .ft-text{
+        font-size: 2ch;
+    }
 }
